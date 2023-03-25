@@ -19,7 +19,7 @@ struct DietRecommendView: View {
                 Text("식단 추천")
                     .bold().padding()
                     .frame(maxWidth: .infinity)
-                    .background(Color.orange)
+                    .background(Color.green)
                     .foregroundColor(Color.white)
                 Image("DietRecommend")
                     .frame(width: 300, height: 200)

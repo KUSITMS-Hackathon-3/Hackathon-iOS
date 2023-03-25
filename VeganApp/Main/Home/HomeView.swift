@@ -14,11 +14,41 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
+            
+            VStack {
+                Spacer()
+                
+                Image("homeBackground")
+            }
+            .frame(width: 300)
+            
+            VStack {
+                Spacer()
+                Spacer()
+                Spacer()
+//                Image("homeBackground")
+//                    .resizable()
+//                    .scaledToFill()
+//                    .frame(height: 320)
+//                    .clipped()
+                
+                Image("Level3")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 180, alignment: .center)
+                
+                Spacer()
+            }
+            
             VStack{
-                Text("danto")
-                    .font(.system(size: 40, design: .rounded))
-                    .bold()
-                    .padding()
+//                Text("danto")
+//                    .font(.system(size: 40, design: .rounded))
+//                    .bold()
+//                    .padding()
+                Image("homeLogoImg")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 100)
                 
                 Spacer()
                 
@@ -38,20 +68,18 @@ struct HomeView: View {
                         }
                     }
                     .font(.system(size: 24, weight: .bold, design: .rounded))
-                    .padding(20)
+                    .padding(.horizontal, 28)
+                    .padding(.bottom, 60)
                 }
-                
-                Spacer()
-                Spacer()
-                Spacer()
                 
                 HStack {
                     Button {
                         showVeganInfo = true
                     } label: {
-                        RoundedRectangle(cornerRadius: 28)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.gray)
+                        Image("homeVeganinfo")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120)
                     }
                     
                     Spacer()
@@ -59,25 +87,27 @@ struct HomeView: View {
                     Button {
                         // 상점
                     } label: {
-                        RoundedRectangle(cornerRadius: 28)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.blue)
+                        Image("homeShop")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120)
+
                     }
                 }
-                .padding(20)
-                 
-                Image("Level1")
-                    .resizable()
-                    .scaledToFit()
-                    .frame(height: 160, alignment: .center)
+                
+//                Spacer()
+                Spacer()
+                Spacer()
                 
                 HStack {
                     Button {
                         showDietRecommend = true
                     } label: {
-                        RoundedRectangle(cornerRadius: 28)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.yellow)
+                        Image("homeDietRecommend")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: 120)
+                            .padding(.horizontal, 4)
                     }
                     
                     Spacer()
@@ -85,13 +115,17 @@ struct HomeView: View {
                     Button {
                         showTutorial = true
                     } label: {
-                        RoundedRectangle(cornerRadius: 28)
-                            .frame(width: 100, height: 100)
-                            .foregroundColor(.green)
+                        Image("homeTutorial")
+                            .padding(.horizontal, 20)
+                            
                     }
                 }
-                .padding(20)
+                
+                
+                Spacer()
             }
+            
+            
             
             if $showVeganInfo.wrappedValue {
                 VeganInfoView(showVeganInfo: self.$showVeganInfo)
