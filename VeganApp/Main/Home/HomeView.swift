@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showVeganInfo = true
-    
+    @State private var showVeganInfo = false
+    @State private var showDietRecommend = false
+    @State private var showTutorial = false
     
     var body: some View {
         ZStack {
@@ -25,9 +26,9 @@ struct HomeView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing) {
-                        Text("채식 시작한 지 125일 때")
+                        Text("채린이 🍀")
                             .padding(.bottom, 8)
-                        Text("멋쟁이 토마토")
+                        Text("단토와 함께한지 125일 때")
                         HStack {
                             Text("레벨 1")
                             ProgressView(value: 40, total: 100)
@@ -55,61 +56,58 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    RoundedRectangle(cornerRadius: 28)
-                        .frame(width: 100, height: 100)
-                        .foregroundColor(.blue)
+                    Button {
+                        // 상점
+                    } label: {
+                        RoundedRectangle(cornerRadius: 28)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                    }
                 }
                 .padding(20)
-                
-                RoundedRectangle(cornerRadius: 28)
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(.red)
+                 
+                Image("Level1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 160, alignment: .center)
                 
                 HStack {
-                    RoundedRectangle(cornerRadius: 28)
-                        .frame(width: 100, height: 100)
-                        .foregroundColor(.yellow)
+                    Button {
+                        showDietRecommend = true
+                    } label: {
+                        RoundedRectangle(cornerRadius: 28)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.yellow)
+                    }
                     
                     Spacer()
                     
-                    RoundedRectangle(cornerRadius: 28)
-                        .frame(width: 100, height: 100)
-                        .foregroundColor(.green)
+                    Button {
+                        showTutorial = true
+                    } label: {
+                        RoundedRectangle(cornerRadius: 28)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.green)
+                    }
                 }
                 .padding(20)
             }
             
             if $showVeganInfo.wrappedValue {
-                ZStack {
-                            Color.black.opacity(0.4)
-                                .edgesIgnoringSafeArea(.vertical)
-                            VStack(spacing: 20) {
-                                Text("오늘의 채식 지식")
-                                    .bold().padding()
-                                    .frame(maxWidth: .infinity)
-                                    .background(Color.orange)
-                                    .foregroundColor(Color.white)
-                                Spacer()
-                                Text("채식은 좋습니다!")
-                                    .font(.system(size: 20, weight: .bold))
-                                Button(action: {
-                                    self.showVeganInfo = false
-                                }) {
-                                    Text("Close")
-                                }.padding()
-                            }
-                            .frame(width: 300, height: 200)
-                            .background(Color.white)
-                            .cornerRadius(20).shadow(radius: 20)
-                        }
-                    }
-                
+                VeganInfoView(showVeganInfo: self.$showVeganInfo)
+            }
             
+            if $showDietRecommend.wrappedValue {
+                DietRecommendView(showDietRecommend: self.$showDietRecommend)
+            }
+            
+            if $showTutorial.wrappedValue {
+                TutorialView(showTutorial: self.$showTutorial)
+            }
             
         }
     }
 }
-
 
 
 struct HomeView_Previews: PreviewProvider {
