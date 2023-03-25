@@ -13,11 +13,13 @@ class RecipeDetailViewController: UIViewController {
     @IBOutlet weak var veganLevelLabel: UILabel!
     @IBOutlet weak var hashtagLabel: UILabel!
     @IBOutlet weak var foodImageView: UIImageView!
-    @IBOutlet weak var ingredientsLabel: UILabel!
+    @IBOutlet weak var ingredientTextView: UITextView!
     @IBOutlet weak var contentsTextView: UITextView!
+    @IBOutlet weak var veganButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configureView()
+        self.navigationController?.navigationBar.tintColor = .black
      }
     var recipe: Recipe?
     private func configureView() {
@@ -25,5 +27,14 @@ class RecipeDetailViewController: UIViewController {
         self.titleLabel.text = recipe.title
         self.veganLevelLabel.text = recipe.veganLevel
         self.hashtagLabel.text = recipe.hashtag
+        self.ingredientTextView.text = recipe.ingredients
+        self.contentsTextView.text = recipe.steps
+        self.foodImageView.layer.cornerRadius = 14
+        self.veganButton.layer.cornerRadius = 25
+        self.ingredientTextView.layer.cornerRadius = 18
+        self.contentsTextView.layer.cornerRadius = 18
+        self.ingredientTextView.backgroundColor = UIColor(red: 237/256, green: 235/256, blue: 235/256, alpha: 1.0)
+        self.contentsTextView.backgroundColor = UIColor(red: 237/256, green: 235/256, blue: 235/256, alpha: 1.0)
+        
     }
 }

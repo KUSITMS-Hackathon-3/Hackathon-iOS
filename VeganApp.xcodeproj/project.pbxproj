@@ -29,6 +29,7 @@
 		BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5429CED72F00EA5CEA /* Recipe.swift */; };
 		BEC34B5729CEE40F00EA5CEA /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5629CEE40F00EA5CEA /* RecipeCell.swift */; };
 		BEC34B5929CEE70600EA5CEA /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5829CEE70600EA5CEA /* RecipeDetailViewController.swift */; };
+		BEC34B5D29CF7FA400EA5CEA /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5C29CF7FA400EA5CEA /* MyPageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BEC34B5429CED72F00EA5CEA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 		BEC34B5629CEE40F00EA5CEA /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
 		BEC34B5829CEE70600EA5CEA /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		BEC34B5C29CF7FA400EA5CEA /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		510CF01829CEDEF000746374 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				BEC34B5C29CF7FA400EA5CEA /* MyPageViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				510CF04729CF6ABA00746374 /* CommunityView.swift in Sources */,
 				510CF04B29CF7B8800746374 /* CommunityRowView.swift in Sources */,
 				BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */,
+				BEC34B5D29CF7FA400EA5CEA /* MyPageViewController.swift in Sources */,
 				510CF01E29CEE20B00746374 /* User.swift in Sources */,
 				510CF00329CEA76000746374 /* HomeViewController.swift in Sources */,
 				510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */,
