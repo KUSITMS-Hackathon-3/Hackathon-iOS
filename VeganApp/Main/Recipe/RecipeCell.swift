@@ -12,7 +12,7 @@ class RecipeCell: UICollectionViewCell {
     
     @IBOutlet weak var recipeTitle: UILabel!
     @IBOutlet weak var recipeImageView: UIImageView!
-    
-    
+    @IBOutlet weak var veganLevelLabel: UIButton!
+    @IBOutlet weak var hashtagLabel: UILabel!
     
 }

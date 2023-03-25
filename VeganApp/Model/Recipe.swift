@@ -6,14 +6,15 @@
 //
 
 import Foundation
+import UIKit
 struct Recipe {
     var id: String?
     var title: String
-    var ingredients: [String]
+    var ingredients: String
     var veganLevel: String
-    var steps: [String]
+    var steps: String
     var createdDate: Date?
-    var recipeImageUrl: String
+    var recipeImageUrl: UIImage?
     var hashtag: String
     
 }
