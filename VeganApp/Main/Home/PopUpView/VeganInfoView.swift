@@ -20,16 +20,18 @@ struct VeganInfoView: View {
                     .frame(maxWidth: .infinity)
                     .background(Color.orange)
                     .foregroundColor(Color.white)
-                Spacer()
-                Text("채식은 좋습니다!")
-                    .font(.system(size: 20, weight: .bold))
+//                Spacer()
+                Text("락토오보베지테리언은 유제품과 계란은섭취하지만 고기와 생선은 섭취하지 않는 채식주의자 입니다. 이러한 식습관은 고기나 생선을 섭취하지 않는 채식주의자와는 달리 다양한 영양소를 보다 쉽게 섭취할수 있습니다. ")
+                    .fixedSize(horizontal: false, vertical: true)
+                    .font(.system(size: 20))
+                    .padding(20)
                 Button(action: {
                     self.showVeganInfo = false
                 }) {
                     Text("Close")
                 }.padding()
             }
-            .frame(width: 300, height: 200)
+            .frame(width: 300)
             .background(Color.white)
             .cornerRadius(20).shadow(radius: 20)
         }

@@ -66,9 +66,10 @@ struct HomeView: View {
                 }
                 .padding(20)
                 
-                RoundedRectangle(cornerRadius: 28)
-                    .frame(width: 100, height: 100)
-                    .foregroundColor(.red)
+                Image("Level1")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(height: 200, alignment: .center)
                 
                 HStack {
                     Button {
