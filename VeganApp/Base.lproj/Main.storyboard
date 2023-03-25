@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -572,7 +573,7 @@
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="npi-ss-r8q"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7xn-8e-7HL" firstAttribute="top" secondItem="npi-ss-r8q" secondAttribute="top" id="EXb-2R-fyR"/>
                             <constraint firstItem="7xn-8e-7HL" firstAttribute="bottom" secondItem="npi-ss-r8q" secondAttribute="bottom" id="NcN-tS-yNH"/>
@@ -948,7 +949,7 @@
                             </containerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MlW-EN-ZWJ"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="backgroundColor"/>
                         <constraints>
                             <constraint firstItem="MlW-EN-ZWJ" firstAttribute="trailing" secondItem="TGS-nG-03c" secondAttribute="trailing" id="QZ5-Ng-VTE"/>
                             <constraint firstItem="TGS-nG-03c" firstAttribute="leading" secondItem="MlW-EN-ZWJ" secondAttribute="leading" id="bSo-zF-ZVO"/>
@@ -1241,6 +1242,9 @@
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="text.bubble" catalog="system" width="128" height="110"/>
         <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <namedColor name="backgroundColor">
+            <color red="0.9649999737739563" green="0.9649999737739563" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
         <systemColor name="labelColor">
             <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
