@@ -64,19 +64,91 @@
 		510CEFFD29CEA76000746374 /* VeganApp */ = {
 			isa = PBXGroup;
 			children = (
+				510CF01429CEDEA100746374 /* Service */,
+				510CF01329CEDE8E00746374 /* Main */,
+				510CF01229CEDE8700746374 /* Model */,
 				510CEFFE29CEA76000746374 /* AppDelegate.swift */,
 				510CF00029CEA76000746374 /* SceneDelegate.swift */,
 				510CF00429CEA76000746374 /* Main.storyboard */,
 				510CF00729CEA76100746374 /* Assets.xcassets */,
 				510CF00929CEA76100746374 /* LaunchScreen.storyboard */,
 				510CF00C29CEA76100746374 /* Info.plist */,
-				BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */,
-				BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */,
-				510CF00229CEA76000746374 /* HomeViewController.swift */,
-				BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */,
-				BEC34B5429CED72F00EA5CEA /* Recipe.swift */,
 			);
 			path = VeganApp;
+			sourceTree = "<group>";
+		};
+		510CF01229CEDE8700746374 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BEC34B5429CED72F00EA5CEA /* Recipe.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		510CF01329CEDE8E00746374 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				510CF01A29CEDFBB00746374 /* Community */,
+				510CF01929CEDF8800746374 /* DietConfirm */,
+				510CF01829CEDEF000746374 /* MyPage */,
+				510CF01729CEDEE400746374 /* Recipe */,
+				510CF01629CEDEDA00746374 /* Home */,
+				510CF01529CEDEB900746374 /* Auth */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		510CF01429CEDEA100746374 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		510CF01529CEDEB900746374 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		510CF01629CEDEDA00746374 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				510CF00229CEA76000746374 /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		510CF01729CEDEE400746374 /* Recipe */ = {
+			isa = PBXGroup;
+			children = (
+				BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */,
+				BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */,
+			);
+			path = Recipe;
+			sourceTree = "<group>";
+		};
+		510CF01829CEDEF000746374 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
+		510CF01929CEDF8800746374 /* DietConfirm */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DietConfirm;
+			sourceTree = "<group>";
+		};
+		510CF01A29CEDFBB00746374 /* Community */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Community;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
