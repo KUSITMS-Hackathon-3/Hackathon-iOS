@@ -17,6 +17,8 @@
 		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
 		BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */; };
 		BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5429CED72F00EA5CEA /* Recipe.swift */; };
+		BEC34B5729CEE40F00EA5CEA /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5629CEE40F00EA5CEA /* RecipeCell.swift */; };
+		BEC34B5929CEE70600EA5CEA /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5829CEE70600EA5CEA /* RecipeDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		BEC34B5429CED72F00EA5CEA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		BEC34B5629CEE40F00EA5CEA /* RecipeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		BEC34B5829CEE70600EA5CEA /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +130,8 @@
 			children = (
 				BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */,
 				BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */,
+				BEC34B5629CEE40F00EA5CEA /* RecipeCell.swift */,
+				BEC34B5829CEE70600EA5CEA /* RecipeDetailViewController.swift */,
 			);
 			path = Recipe;
 			sourceTree = "<group>";
@@ -223,8 +229,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */,
+				BEC34B5929CEE70600EA5CEA /* RecipeDetailViewController.swift in Sources */,
 				BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */,
 				BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */,
+				BEC34B5729CEE40F00EA5CEA /* RecipeCell.swift in Sources */,
 				BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */,
 				510CF00329CEA76000746374 /* HomeViewController.swift in Sources */,
 				510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */,

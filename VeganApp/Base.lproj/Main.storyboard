@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7c2-FG-ZM1">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -138,30 +139,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="iGi-43-3Va">
-                                <rect key="frame" x="76" y="211" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-Ur-k0f">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="S8L-bh-8en">
-                                    <size key="itemSize" width="128" height="128"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SWN-aC-VD6">
+                                    <size key="itemSize" width="183" height="166"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="naO-a8-dwv">
-                                        <rect key="frame" x="56" y="0.0" width="128" height="128"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="RecipeCell" id="g1f-Of-w3y" customClass="RecipeCell" customModule="VeganApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="183" height="166"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gtd-Dt-OyP">
-                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="92w-7V-G0E">
+                                            <rect key="frame" x="0.0" y="0.0" width="183" height="166"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JmQ-eD-oYU">
+                                                    <rect key="frame" x="0.0" y="0.0" width="128" height="106"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cis-dN-LWi">
+                                                    <rect key="frame" x="43" y="107" width="42" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </collectionViewCellContentView>
+                                        <size key="customSize" width="183" height="166"/>
+                                        <connections>
+                                            <outlet property="recipeImageView" destination="JmQ-eD-oYU" id="vad-wL-4qg"/>
+                                            <outlet property="recipeTitle" destination="Cis-dN-LWi" id="OQa-2x-b9c"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YAT-mz-YsV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YAT-mz-YsV" firstAttribute="bottom" secondItem="Yoh-Ur-k0f" secondAttribute="bottom" id="BZz-8J-oLa"/>
+                            <constraint firstItem="Yoh-Ur-k0f" firstAttribute="top" secondItem="YAT-mz-YsV" secondAttribute="top" id="jbr-Hc-mpP"/>
+                            <constraint firstItem="Yoh-Ur-k0f" firstAttribute="leading" secondItem="YAT-mz-YsV" secondAttribute="leading" id="nYD-bH-xXZ"/>
+                            <constraint firstItem="YAT-mz-YsV" firstAttribute="trailing" secondItem="Yoh-Ur-k0f" secondAttribute="trailing" id="olK-df-dBV"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item 2" id="mBW-Os-zK6"/>
                     <navigationItem key="navigationItem" title="비건 레시피 공유하기" id="iif-h3-7gV">
@@ -172,10 +196,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="recipeCollectionView" destination="Yoh-Ur-k0f" id="Qqr-Zi-eA8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDD-5U-6FW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4221" y="1742"/>
+            <point key="canvasLocation" x="4220.6106870229005" y="1741.549295774648"/>
         </scene>
         <!--레시피 작성-->
         <scene sceneID="vQo-Ih-rbb">
@@ -271,7 +298,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="레시피 작성" style="editor" id="E5E-HP-1gP">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="Y2h-Pq-wo0">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="z4C-JM-Kzo">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="z4C-JM-Kzo">
                                 <rect key="frame" x="290" y="5" width="87" height="34.333333333333336"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
@@ -284,16 +311,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="contentsTextView" destination="M8o-GN-lDD" id="eVs-oH-Rhw"/>
-                        <outlet property="ingredientTextField" destination="1ke-yf-4Ee" id="xbS-qh-eaF"/>
-                        <outlet property="levelTextField" destination="cjC-1V-YC3" id="9yh-Ex-wxg"/>
+                        <outlet property="cookTimeTextField" destination="Ykh-t1-Ked" id="0H6-Zp-7cs"/>
+                        <outlet property="ingredientsTextField" destination="1ke-yf-4Ee" id="auo-Kd-MTM"/>
                         <outlet property="registerButton" destination="Y2h-Pq-wo0" id="uOz-3S-P35"/>
-                        <outlet property="timeTextField" destination="Ykh-t1-Ked" id="2BR-tm-CrN"/>
                         <outlet property="titleTextField" destination="hNu-ua-I9W" id="Alk-LA-V9s"/>
+                        <outlet property="veganLevelTextField" destination="cjC-1V-YC3" id="SVS-Tm-k9P"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RQQ-CI-s0F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5291" y="1742"/>
+            <point key="canvasLocation" x="5393" y="1486"/>
         </scene>
         <!--Item-->
         <scene sceneID="gRR-XB-fqL">
@@ -378,6 +405,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4V9-AJ-8XX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4221" y="2470"/>
+        </scene>
+        <!--Recipe Detail View Controller-->
+        <scene sceneID="gIs-In-mpT">
+            <objects>
+                <viewController storyboardIdentifier="RecipeDetailViewController" id="rSF-gf-Mav" customClass="RecipeDetailViewController" customModule="VeganApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Y5g-vn-0fq">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="fXq-pR-b1R"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ypm-vI-xJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5422" y="2170"/>
         </scene>
         <!--Item-->
         <scene sceneID="vqP-Lx-hyR">
