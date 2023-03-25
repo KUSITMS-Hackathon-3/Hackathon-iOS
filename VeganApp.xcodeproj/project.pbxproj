@@ -17,6 +17,7 @@
 		510CF03E29CF30C800746374 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF03D29CF30C800746374 /* HomeView.swift */; };
 		510CF04129CF4FE300746374 /* VeganInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF04029CF4FE300746374 /* VeganInfoView.swift */; };
 		510CF04329CF509A00746374 /* DietRecommendView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF04229CF509A00746374 /* DietRecommendView.swift */; };
+		510CF04529CF5C9D00746374 /* TutorialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF04429CF5C9D00746374 /* TutorialView.swift */; };
 		BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */; };
 		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
 		BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */; };
@@ -38,6 +39,7 @@
 		510CF03D29CF30C800746374 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		510CF04029CF4FE300746374 /* VeganInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganInfoView.swift; sourceTree = "<group>"; };
 		510CF04229CF509A00746374 /* DietRecommendView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietRecommendView.swift; sourceTree = "<group>"; };
+		510CF04429CF5C9D00746374 /* TutorialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialView.swift; sourceTree = "<group>"; };
 		BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -173,6 +175,7 @@
 			children = (
 				510CF04029CF4FE300746374 /* VeganInfoView.swift */,
 				510CF04229CF509A00746374 /* DietRecommendView.swift */,
+				510CF04429CF5C9D00746374 /* TutorialView.swift */,
 			);
 			path = PopUpView;
 			sourceTree = "<group>";
@@ -248,6 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				510CF04529CF5C9D00746374 /* TutorialView.swift in Sources */,
 				BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */,
 				BEC34B5929CEE70600EA5CEA /* RecipeDetailViewController.swift in Sources */,
 				BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */,
