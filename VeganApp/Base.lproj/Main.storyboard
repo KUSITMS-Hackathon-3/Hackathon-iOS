@@ -335,14 +335,39 @@
                     <view key="view" contentMode="scaleToFill" id="kKY-LT-hUy">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7xn-8e-7HL">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <connections>
+                                    <segue destination="VRL-Va-It9" kind="embed" destinationCreationSelector="addSwiftUIView:" id="4av-0K-iZv"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="npi-ss-r8q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="top" secondItem="npi-ss-r8q" secondAttribute="top" id="EXb-2R-fyR"/>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="bottom" secondItem="npi-ss-r8q" secondAttribute="bottom" id="NcN-tS-yNH"/>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="trailing" secondItem="npi-ss-r8q" secondAttribute="trailing" id="UHz-mu-eOU"/>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="leading" secondItem="npi-ss-r8q" secondAttribute="leading" id="fpr-VK-TOU"/>
+                            <constraint firstItem="npi-ss-r8q" firstAttribute="bottom" secondItem="7xn-8e-7HL" secondAttribute="bottom" id="kfl-J8-dkq"/>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="leading" secondItem="npi-ss-r8q" secondAttribute="leading" id="r5w-a1-f1W"/>
+                            <constraint firstItem="7xn-8e-7HL" firstAttribute="trailing" secondItem="npi-ss-r8q" secondAttribute="trailing" id="zeb-U6-N3J"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rVg-9o-OpN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IFA-DO-1YR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4221" y="1029"/>
+            <point key="canvasLocation" x="4220.6106870229005" y="1028.8732394366198"/>
+        </scene>
+        <!--Home View-->
+        <scene sceneID="EFq-we-k3s">
+            <objects>
+                <hostingController id="VRL-Va-It9" customClass="HomeView" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G3d-Nk-gZf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4987" y="863"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dly-Vk-y5e">
