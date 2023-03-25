@@ -17,6 +17,7 @@ struct CommunityRowView: View {
             Text(post[1])
                 .lineLimit(1)
                 .font(.system(size: 16))
+                .padding(.vertical, 4)
             HStack {
                 Spacer()
                 
