@@ -8,8 +8,10 @@
 import Foundation
 
 struct User: Identifiable, Decodable {
-    let user_idx: String?
-    let id: String
+    var id: String?
+    let userId: String
     let nickname: String
-    let level: Int
+    let veganStage: Int?
+    let score: Int?
+    let level: Int?
 }
