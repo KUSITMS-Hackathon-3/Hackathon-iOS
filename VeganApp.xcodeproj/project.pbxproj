@@ -13,6 +13,7 @@
 		510CF00629CEA76000746374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00429CEA76000746374 /* Main.storyboard */; };
 		510CF00829CEA76100746374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00729CEA76100746374 /* Assets.xcassets */; };
 		510CF00B29CEA76100746374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00929CEA76100746374 /* LaunchScreen.storyboard */; };
+		510CF01E29CEE20B00746374 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF01D29CEE20B00746374 /* User.swift */; };
 		BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */; };
 		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
 		BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */; };
@@ -30,6 +31,7 @@
 		510CF00729CEA76100746374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510CF00A29CEA76100746374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		510CF00C29CEA76100746374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		510CF01D29CEE20B00746374 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -69,8 +71,8 @@
 			isa = PBXGroup;
 			children = (
 				510CF01429CEDEA100746374 /* Service */,
-				510CF01329CEDE8E00746374 /* Main */,
 				510CF01229CEDE8700746374 /* Model */,
+				510CF01329CEDE8E00746374 /* Main */,
 				510CEFFE29CEA76000746374 /* AppDelegate.swift */,
 				510CF00029CEA76000746374 /* SceneDelegate.swift */,
 				510CF00429CEA76000746374 /* Main.storyboard */,
@@ -85,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC34B5429CED72F00EA5CEA /* Recipe.swift */,
+				510CF01D29CEE20B00746374 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */,
 				BEC34B5729CEE40F00EA5CEA /* RecipeCell.swift in Sources */,
 				BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */,
+				510CF01E29CEE20B00746374 /* User.swift in Sources */,
 				510CF00329CEA76000746374 /* HomeViewController.swift in Sources */,
 				510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */,
 				510CF00129CEA76000746374 /* SceneDelegate.swift in Sources */,
