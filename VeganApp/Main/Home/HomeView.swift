@@ -26,9 +26,9 @@ struct HomeView: View {
                     Spacer()
                     
                     VStack(alignment: .trailing) {
-                        Text("멋쟁이 토마토")
+                        Text("채린이 🍀")
                             .padding(.bottom, 8)
-                        Text("채식 시작한 지 125일 때")
+                        Text("단토와 함께한지 125일 때")
                         HStack {
                             Text("레벨 1")
                             ProgressView(value: 40, total: 100)
@@ -65,11 +65,11 @@ struct HomeView: View {
                     }
                 }
                 .padding(20)
-                
+                 
                 Image("Level1")
                     .resizable()
                     .scaledToFit()
-                    .frame(height: 200, alignment: .center)
+                    .frame(height: 160, alignment: .center)
                 
                 HStack {
                     Button {
