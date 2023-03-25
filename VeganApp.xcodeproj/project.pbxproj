@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CEFFE29CEA76000746374 /* AppDelegate.swift */; };
 		510CF00129CEA76000746374 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF00029CEA76000746374 /* SceneDelegate.swift */; };
-		510CF00329CEA76000746374 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF00229CEA76000746374 /* ViewController.swift */; };
+		510CF00329CEA76000746374 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF00229CEA76000746374 /* HomeViewController.swift */; };
 		510CF00629CEA76000746374 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00429CEA76000746374 /* Main.storyboard */; };
 		510CF00829CEA76100746374 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00729CEA76100746374 /* Assets.xcassets */; };
 		510CF00B29CEA76100746374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00929CEA76100746374 /* LaunchScreen.storyboard */; };
+		BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */; };
+		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
+		BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */; };
+		BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5429CED72F00EA5CEA /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		510CEFFB29CEA76000746374 /* VeganApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeganApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		510CEFFE29CEA76000746374 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		510CF00029CEA76000746374 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		510CF00229CEA76000746374 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		510CF00229CEA76000746374 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		510CF00529CEA76000746374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		510CF00729CEA76100746374 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		510CF00A29CEA76100746374 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		510CF00C29CEA76100746374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
+		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
+		BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BEC34B5429CED72F00EA5CEA /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +66,15 @@
 			children = (
 				510CEFFE29CEA76000746374 /* AppDelegate.swift */,
 				510CF00029CEA76000746374 /* SceneDelegate.swift */,
-				510CF00229CEA76000746374 /* ViewController.swift */,
 				510CF00429CEA76000746374 /* Main.storyboard */,
 				510CF00729CEA76100746374 /* Assets.xcassets */,
 				510CF00929CEA76100746374 /* LaunchScreen.storyboard */,
 				510CF00C29CEA76100746374 /* Info.plist */,
+				BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */,
+				BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */,
+				510CF00229CEA76000746374 /* HomeViewController.swift */,
+				BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */,
+				BEC34B5429CED72F00EA5CEA /* Recipe.swift */,
 			);
 			path = VeganApp;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				510CF00329CEA76000746374 /* ViewController.swift in Sources */,
+				BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */,
+				BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */,
+				BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */,
+				BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */,
+				510CF00329CEA76000746374 /* HomeViewController.swift in Sources */,
 				510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */,
 				510CF00129CEA76000746374 /* SceneDelegate.swift in Sources */,
 			);
