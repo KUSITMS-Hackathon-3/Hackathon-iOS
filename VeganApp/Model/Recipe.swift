@@ -6,11 +6,14 @@
 //
 
 import Foundation
-
 struct Recipe {
+    var id: String?
     var title: String
-    var ingredient: String
-    var level: String
-    var time: Int
-    var contents: String
+    var ingredients: [String]
+    var veganLevel: String
+    var cookTime: Int
+    var steps: [String]
+    var createdDate: Date?
+    var recipeImageUrl: String
+    
 }
