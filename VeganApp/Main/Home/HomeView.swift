@@ -11,6 +11,8 @@ struct HomeView: View {
     @State private var showVeganInfo = false
     @State private var showDietRecommend = false
     @State private var showTutorial = false
+    @AppStorage("level") var level: Int = 1
+//    UserDefaults.standard.set(1, forKey: "lev/el")
     
     var body: some View {
         ZStack {
@@ -32,7 +34,7 @@ struct HomeView: View {
 //                    .frame(height: 320)
 //                    .clipped()
                 
-                Image("Level3")
+                Image("Level\(level - 1 ?? 1)")
                     .resizable()
                     .scaledToFit()
                     .frame(height: 180, alignment: .center)
@@ -58,9 +60,9 @@ struct HomeView: View {
                     VStack(alignment: .trailing) {
                         Text("채린이 🍀")
                             .padding(.bottom, 8)
-                        Text("단토와 함께한지 125일 때")
+                        Text("단토와 함께한지 125일")
                         HStack {
-                            Text("레벨 1")
+                            Text("레벨 \(level - 1 ?? 1)")
                             ProgressView(value: 40, total: 100)
                                 .tint(.green)
                                 .scaleEffect(x: 1, y: 4)

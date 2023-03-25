@@ -20,6 +20,8 @@ class RecipeDetailViewController: UIViewController {
         super.viewDidLoad()
         self.configureView()
         self.navigationController?.navigationBar.tintColor = .black
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(2, forKey: "level")
      }
     var recipe: Recipe?
     private func configureView() {
@@ -29,6 +31,7 @@ class RecipeDetailViewController: UIViewController {
         self.hashtagLabel.text = recipe.hashtag
         self.ingredientTextView.text = recipe.ingredients
         self.contentsTextView.text = recipe.steps
+        self.foodImageView.image = UIImage(named: recipe.title)
         self.foodImageView.layer.cornerRadius = 14
         self.veganButton.layer.cornerRadius = 25
         self.ingredientTextView.layer.cornerRadius = 18
