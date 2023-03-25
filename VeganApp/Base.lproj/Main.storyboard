@@ -152,10 +152,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBw-Gy-pdP">
-                                <rect key="frame" x="30" y="212.66666666666663" width="333" height="175"/>
+                                <rect key="frame" x="30" y="212.66666666666663" width="333" height="180"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Salad" translatesAutoresizingMaskIntoConstraints="NO" id="tft-1v-qeP">
-                                        <rect key="frame" x="12" y="12" width="309" height="151"/>
+                                        <rect key="frame" x="8" y="12" width="317" height="156"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구운 버섯 샐러드" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S0A-qJ-pEb">
                                         <rect key="frame" x="28" y="23" width="111" height="20.333333333333329"/>
@@ -171,19 +171,19 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="tft-1v-qeP" firstAttribute="top" secondItem="mBw-Gy-pdP" secondAttribute="top" constant="12" id="3cK-24-JhH"/>
-                                    <constraint firstAttribute="trailing" secondItem="tft-1v-qeP" secondAttribute="trailing" constant="12" id="DBP-so-cCc"/>
-                                    <constraint firstItem="tft-1v-qeP" firstAttribute="leading" secondItem="mBw-Gy-pdP" secondAttribute="leading" constant="12" id="Kli-4U-k54"/>
-                                    <constraint firstAttribute="height" constant="175" id="Ogj-nQ-VyB"/>
+                                    <constraint firstAttribute="trailing" secondItem="tft-1v-qeP" secondAttribute="trailing" constant="8" id="DBP-so-cCc"/>
+                                    <constraint firstItem="tft-1v-qeP" firstAttribute="leading" secondItem="mBw-Gy-pdP" secondAttribute="leading" constant="8" id="Kli-4U-k54"/>
+                                    <constraint firstAttribute="height" constant="180" id="Ogj-nQ-VyB"/>
                                     <constraint firstAttribute="bottom" secondItem="tft-1v-qeP" secondAttribute="bottom" constant="12" id="VWg-yc-G1s"/>
                                     <constraint firstItem="S0A-qJ-pEb" firstAttribute="top" secondItem="mBw-Gy-pdP" secondAttribute="top" constant="23" id="jtW-IN-Yau"/>
                                     <constraint firstItem="S0A-qJ-pEb" firstAttribute="leading" secondItem="mBw-Gy-pdP" secondAttribute="leading" constant="28" id="na7-xU-Yox"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yVn-OB-zpa">
-                                <rect key="frame" x="30" y="415.66666666666674" width="333" height="363.33333333333326"/>
+                                <rect key="frame" x="30" y="420.66666666666674" width="333" height="358.33333333333326"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Yoh-Ur-k0f">
-                                        <rect key="frame" x="12" y="44" width="309" height="319.33333333333331"/>
+                                        <rect key="frame" x="12" y="44" width="309" height="314.33333333333331"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SWN-aC-VD6">
                                             <size key="itemSize" width="307" height="97"/>

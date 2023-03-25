@@ -34,7 +34,7 @@ class RecipeViewController: UIViewController {
     }
     
     func configureView() {
-        self.iView.layer.cornerRadius = 12
+        self.iView.layer.cornerRadius = 23
         self.imageView.layer.cornerRadius = 18
         self.collectionViewView.layer.cornerRadius = 18
     }
