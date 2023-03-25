@@ -30,8 +30,8 @@ class WriteRecipeViewController: UIViewController {
         configureTextFieldView()
         self.navigationController?.navigationBar.tintColor = .black
         imagePicker.sourceType = .photoLibrary  // 앨범에서 가져옴
-                imagePicker.allowsEditing = true        // 수정가능 여부
-                imagePicker.delegate = self
+        imagePicker.allowsEditing = true        // 수정가능 여부
+        imagePicker.delegate = self
     }
     
     let imagePicker = UIImagePickerController()

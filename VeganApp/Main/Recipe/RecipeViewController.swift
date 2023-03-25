@@ -24,7 +24,6 @@ class RecipeViewController: UIViewController {
         self.configureRecipeCollectionView()
         self.loadGoodHabitList()
         self.configureView()
-        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -92,6 +91,7 @@ extension RecipeViewController: UICollectionViewDataSource {
         cell.recipeTitle.text = recipe.title
         cell.hashtagLabel.text = recipe.hashtag
         cell.veganLevelLabel.setTitle(recipe.veganLevel, for: .normal)
+        cell.recipeImageView.image = UIImage(named: recipe.title)
         return cell
     }
 }

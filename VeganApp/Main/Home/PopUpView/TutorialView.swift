@@ -24,39 +24,39 @@ struct TutorialView: View {
                 VStack(alignment: .leading) {
                     Text("토마토를 어떻게 키울수 있는가? 토마토는 이렇게 성장합니다!")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 20))
+                        .font(.system(size: 16))
                         .padding(.bottom, 10)
                     
                     HStack {
                         VStack {
                             Text("LV.1")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
+                                .font(.system(size: 16))
                             Text("씨앗")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
+                                .font(.system(size: 16))
                         }
                         Spacer()
                         Divider()
                         Spacer()
                         VStack {
-                            Text("LV.1")
+                            Text("LV.2")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
-                            Text("씨앗")
+                                .font(.system(size: 16))
+                            Text("새싹")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
+                                .font(.system(size: 16))
                         }
                         Spacer()
                         Divider()
                         Spacer()
                         VStack {
-                            Text("LV.1")
+                            Text("LV.3")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
-                            Text("씨앗")
+                                .font(.system(size: 16))
+                            Text("토마토")
                                 .fixedSize(horizontal: false, vertical: true)
-                                .font(.system(size: 20))
+                                .font(.system(size: 16))
                         }
                     }
                     .padding(.horizontal, 28)
@@ -65,13 +65,13 @@ struct TutorialView: View {
                     
                     Text("채식 식단을 인증하거나, 레시피를 업로드할 시에 리워드가 지급됩니다. 일정 리워드가 쌓이면 레벨이 올라갑니다. ")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 20))
+                        .font(.system(size: 16))
                         .padding(.bottom, 10)
                     
                     
                     Text("앱은 이렇게 사용할 수 있어요!")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 20))
+                        .font(.system(size: 16))
                         .padding(.bottom, 10)
                     
                     Text("1.홈 화면")
@@ -80,15 +80,15 @@ struct TutorialView: View {
                     
                     Text("책 아이콘: 채식 지식을 전달해드려요! ")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 14))
+                        .font(.system(size: 16))
                     
                     Text("협탁 아이콘: 채식 식단을 추천해드려요!")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 14))
+                        .font(.system(size: 16))
                     
                     Text("가게 아이콘: 토마토를 꾸밀 수 있어요! ")
                         .fixedSize(horizontal: false, vertical: true)
-                        .font(.system(size: 14))
+                        .font(.system(size: 16))
                         .padding(.bottom, 10)
                     
                     VStack(alignment: .leading) {
