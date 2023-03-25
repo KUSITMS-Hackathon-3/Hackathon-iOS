@@ -14,10 +14,5 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var pwTextField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-    @IBAction func tapLoginButton(_ sender: UIButton) {
-        
-    }
-    
 }
