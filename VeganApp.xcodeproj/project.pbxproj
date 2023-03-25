@@ -15,6 +15,7 @@
 		510CF00B29CEA76100746374 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 510CF00929CEA76100746374 /* LaunchScreen.storyboard */; };
 		510CF01E29CEE20B00746374 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF01D29CEE20B00746374 /* User.swift */; };
 		510CF03E29CF30C800746374 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF03D29CF30C800746374 /* HomeView.swift */; };
+		510CF04129CF4FE300746374 /* VeganInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF04029CF4FE300746374 /* VeganInfoView.swift */; };
 		BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */; };
 		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
 		BEC34B5329CED3FD00EA5CEA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */; };
@@ -34,6 +35,7 @@
 		510CF00C29CEA76100746374 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		510CF01D29CEE20B00746374 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		510CF03D29CF30C800746374 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		510CF04029CF4FE300746374 /* VeganInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeganInfoView.swift; sourceTree = "<group>"; };
 		BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 		510CF01629CEDEDA00746374 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				510CF03F29CF4FC800746374 /* PopUpView */,
 				510CF00229CEA76000746374 /* HomeViewController.swift */,
 				510CF03D29CF30C800746374 /* HomeView.swift */,
 			);
@@ -161,6 +164,14 @@
 			children = (
 			);
 			path = Community;
+			sourceTree = "<group>";
+		};
+		510CF03F29CF4FC800746374 /* PopUpView */ = {
+			isa = PBXGroup;
+			children = (
+				510CF04029CF4FE300746374 /* VeganInfoView.swift */,
+			);
+			path = PopUpView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 				510CF01E29CEE20B00746374 /* User.swift in Sources */,
 				510CF00329CEA76000746374 /* HomeViewController.swift in Sources */,
 				510CEFFF29CEA76000746374 /* AppDelegate.swift in Sources */,
+				510CF04129CF4FE300746374 /* VeganInfoView.swift in Sources */,
 				510CF00129CEA76000746374 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

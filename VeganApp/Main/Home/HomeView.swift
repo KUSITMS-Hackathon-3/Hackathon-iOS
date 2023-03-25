@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var showVeganInfo = true
-    
+    @State private var showVeganInfo = false
+    @State private var showDietRecommend = false
     
     var body: some View {
         ZStack {
@@ -55,9 +55,13 @@ struct HomeView: View {
                     
                     Spacer()
                     
-                    RoundedRectangle(cornerRadius: 28)
-                        .frame(width: 100, height: 100)
-                        .foregroundColor(.blue)
+                    Button {
+                        showDietRecommend = true
+                    } label: {
+                        RoundedRectangle(cornerRadius: 28)
+                            .frame(width: 100, height: 100)
+                            .foregroundColor(.blue)
+                    }
                 }
                 .padding(20)
                 
@@ -80,36 +84,37 @@ struct HomeView: View {
             }
             
             if $showVeganInfo.wrappedValue {
-                ZStack {
-                            Color.black.opacity(0.4)
-                                .edgesIgnoringSafeArea(.vertical)
-                            VStack(spacing: 20) {
-                                Text("오늘의 채식 지식")
-                                    .bold().padding()
-                                    .frame(maxWidth: .infinity)
-                                    .background(Color.orange)
-                                    .foregroundColor(Color.white)
-                                Spacer()
-                                Text("채식은 좋습니다!")
-                                    .font(.system(size: 20, weight: .bold))
-                                Button(action: {
-                                    self.showVeganInfo = false
-                                }) {
-                                    Text("Close")
-                                }.padding()
-                            }
-                            .frame(width: 300, height: 200)
-                            .background(Color.white)
-                            .cornerRadius(20).shadow(radius: 20)
-                        }
-                    }
-                
+                VeganInfoView(showVeganInfo: self.$showVeganInfo)
+            }
             
+            if $showDietRecommend.wrappedValue {
+                ZStack {
+                    Color.black.opacity(0.4)
+                        .edgesIgnoringSafeArea(.vertical)
+                    VStack(spacing: 20) {
+                        Text("식단 추천")
+                            .bold().padding()
+                            .frame(maxWidth: .infinity)
+                            .background(Color.orange)
+                            .foregroundColor(Color.white)
+                        Spacer()
+                        Text("채식은 좋습니다!")
+                            .font(.system(size: 20, weight: .bold))
+                        Button(action: {
+                            self.showDietRecommend = false
+                        }) {
+                            Text("Close")
+                        }.padding()
+                    }
+                    .frame(width: 300, height: 200)
+                    .background(Color.white)
+                    .cornerRadius(20).shadow(radius: 20)
+                }
+            }
             
         }
     }
 }
-
 
 
 struct HomeView_Previews: PreviewProvider {
