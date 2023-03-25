@@ -11,9 +11,9 @@ struct Recipe {
     var title: String
     var ingredients: [String]
     var veganLevel: String
-    var cookTime: Int
     var steps: [String]
     var createdDate: Date?
     var recipeImageUrl: String
+    var hashtag: String
     
 }
