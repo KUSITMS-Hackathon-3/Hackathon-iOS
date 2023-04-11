@@ -24,6 +24,7 @@
 		510CF04F29CF7C9F00746374 /* communityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF04E29CF7C9F00746374 /* communityData.swift */; };
 		510CF05129CF846F00746374 /* CommunityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF05029CF846F00746374 /* CommunityViewController.swift */; };
 		510CF05329CF979D00746374 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510CF05229CF979D00746374 /* ImagePicker.swift */; };
+		51BDFE2329E5182D00E21250 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BDFE2229E5182D00E21250 /* LoginView.swift */; };
 		51C2C67529D5B1D90050FDB8 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C2C67429D5B1D90050FDB8 /* CalendarView.swift */; };
 		BEC34B4F29CEC48300EA5CEA /* RecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */; };
 		BEC34B5129CEC59F00EA5CEA /* WriteRecipeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */; };
@@ -56,6 +57,7 @@
 		510CF04E29CF7C9F00746374 /* communityData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = communityData.swift; sourceTree = "<group>"; };
 		510CF05029CF846F00746374 /* CommunityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityViewController.swift; sourceTree = "<group>"; };
 		510CF05229CF979D00746374 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		51BDFE2229E5182D00E21250 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		51C2C67429D5B1D90050FDB8 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
 		BEC34B4E29CEC48300EA5CEA /* RecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeViewController.swift; sourceTree = "<group>"; };
 		BEC34B5029CEC59F00EA5CEA /* WriteRecipeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteRecipeViewController.swift; sourceTree = "<group>"; };
@@ -145,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				BEC34B5229CED3FD00EA5CEA /* LoginViewController.swift */,
+				51BDFE2229E5182D00E21250 /* LoginView.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				BEC34B5529CED72F00EA5CEA /* Recipe.swift in Sources */,
 				BEC34B5729CEE40F00EA5CEA /* RecipeCell.swift in Sources */,
 				510CF04929CF74AA00746374 /* CommunityDetailView.swift in Sources */,
+				51BDFE2329E5182D00E21250 /* LoginView.swift in Sources */,
 				510CF03E29CF30C800746374 /* HomeView.swift in Sources */,
 				510CF04729CF6ABA00746374 /* CommunityView.swift in Sources */,
 				510CF04B29CF7B8800746374 /* CommunityRowView.swift in Sources */,
