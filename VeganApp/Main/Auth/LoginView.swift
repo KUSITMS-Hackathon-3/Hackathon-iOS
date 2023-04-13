@@ -10,8 +10,9 @@ import SwiftUI
 struct LoginView: View {
     @State private var userId = ""
     @State private var password = ""
-    
     @FocusState private var textFieldIsFocused: Bool
+    
+    @State var isSignUpNavLinkActive = false
     
     var body: some View {
         NavigationView {
@@ -35,8 +36,8 @@ struct LoginView: View {
                     .padding(.vertical)
                 }
                 
-                NavigationLink {
-                    SignUpView()
+                NavigationLink(isActive: $isSignUpNavLinkActive) {
+                    SignUpView(isSignUpNavLinkActive: $isSignUpNavLinkActive)
                 } label: {
                     HStack {
                         Text("처음 오셨나요?")

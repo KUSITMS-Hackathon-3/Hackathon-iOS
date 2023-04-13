@@ -17,6 +17,8 @@ struct SignUpView: View {
     @State private var isRightPassword = false
     @FocusState private var textFieldIsFocused: Bool
     
+    @Binding var isSignUpNavLinkActive: Bool
+    
     var body: some View {
         VStack(alignment: .leading) {
             userIdTextField
@@ -29,6 +31,7 @@ struct SignUpView: View {
                 if verifyPassword == password {
                     isRightPassword = true
                     verifyPasswordMessage = "비밀번호가 확인되었습니다"
+                    isSignUpNavLinkActive = false
                 } else {
                     isRightPassword = false
                     verifyPasswordMessage = "비밀번호가 다릅니다!"
@@ -121,11 +124,5 @@ struct SignUpView: View {
             Text(verifyPasswordMessage)
         }
         .padding(.bottom)
-    }
-}
-
-struct SignUpView_Previews: PreviewProvider {
-    static var previews: some View {
-        SignUpView()
     }
 }
