@@ -60,15 +60,17 @@ struct LoginView: View {
                 .padding(.vertical)
             }
             
-            HStack {
-                Text("처음 오셨나요?")
+            Button {
                 
-                Spacer()
-                
-                Text("회원가입하기")
-                Image(systemName: "chevron.right")
+            } label: {
+                HStack {
+                    Text("처음 오셨나요?")
+                    
+                    Text("회원가입하기")
+                    Image(systemName: "chevron.right")
+                }
+                .foregroundColor(.gray)
             }
-            .foregroundColor(.gray)
         }
         .padding(.horizontal, 30)
         .toolbar {
